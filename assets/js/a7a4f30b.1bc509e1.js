@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3311],{3804:t=>{t.exports=JSON.parse('{"title":"Intro","description":"5 minutes to learn the most important Bagpipes concepts.","slug":"/category/intro","permalink":"/docusaurus/docs/category/intro","navigation":{"next":{"title":"Concepts","permalink":"/docusaurus/docs/intro/concepts"}}}')}}]);
