@@ -45,5 +45,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 heres one way to successfully add images...
 
 ```
-<img src={require('@site/static/img/webhookEndpoint2.png').default}  width="500"/>
-```
+<img src={require('@site/static/img/webhookEndpoint.png').default}  width="500"/>
+```  
