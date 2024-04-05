@@ -17,14 +17,16 @@ sidebar_position: 3
 
 ### 1. Drop a webhook node
 Drag and drop a webhook node into the scenario
-<img src="/img/webhook-0.png" width="300" />
+ <img src={require('@site/static/img/webhook-0.png').default}  width="300"/>
 
 
 ### 2. Create a Webhook
 
 Create a webhook by clicking create and then entering the name of the webhook. 
 
- <img src="/img/webhookPriceCheck.png" width="500" />
+
+ <img src={require('@site/static/img/webhookPriceCheck.png').default}  width="500"/>
+
 <div class="text--center">
  
 </div>
@@ -34,15 +36,17 @@ Once you added a name and pressed ok, a new webhook endpoint will be generated f
 
 Make sure to click "Start Listening" so that the webhook is listening for new data. 
 
-  <img src="/img/webhookEndpoint2.png" width="500" />
-  <img src="/img/webhook-stop.png" width="200" />
+<img src={require('@site/static/img/webhookEndpoint2.png').default}  width="500"/>
+<img src={require('@site/static/img/webhook-stop.png').default}  width="200"/>
 
 Now we want to send some initital data to the webhook. This is essential so that the objects and fields of the data structure can be used downstream.
 
 ### 4. Send data to the webhook endpoint
 
 We will use Postman to send a POST request to the endpoint. 
-<img src="/img/webhookPostman2.png" />
+<img src={require('@site/static/img/webhookPostman2.png').default}/>
+
+
 We added the necessary object to the body. In this example it contains, title, assetPair and priceType, which are needed in our example price fetcher. 
 
 Then we send the request. Once it is sent the Webhook should receive the event, and you should get a notification that the webhook event is received. 
@@ -53,7 +57,8 @@ You can now use the event data data downstream in other nodes. Just drag and dro
 
 
 <div class="text--center">
-  <img src="/img/webhookPillHttp.png" />
+  <img src={require('@site/static/img/webhookPillHttp.png').default}/>
+
     _Above the variables representing data from the webhook is dragged and dropped into other fields. These are called [Pills](/docs/intro/concepts#pills)._ 
 </div>
 
@@ -74,7 +79,7 @@ Take care pasting text into the field as it may contain hidden html that may cau
 Then we press the "Run Once" button in the top right, and then the scenario execution is running. The webhook will await for an event. 
 
 <div class="text--center">
-  <img src="/img/webhookExecutionAwait.png" />
+  <img src={require('@site/static/img/webhookExecutionAwait.png').default}/>
 </div>
 
 We then send another Postman request, with the same data structure (but can have different data).
@@ -86,7 +91,7 @@ We then send another Postman request, with the same data structure (but can have
 ### 7. Responses received  
 
 <div class="text--center">
-  <img src="/img/webhookHttpResult.png" />
+  <img src={require('@site/static/img/webhookHttpResult.png').default}/>
     _The responses are received and the data can be viewed if clicking on the green notification._ 
 </div>
 
@@ -97,7 +102,7 @@ The data structure of the response can be saved as pills if you wish to extend t
 If we add an additional node to the scenario, and then open the control panel (by clicking on any input field) we can see that the control panel has been populated by pills from the http's. The pills can be used as keys, but with the flexibility of differing values. 
 
 <div class="text--center">
-  <img src="/img/webhookHttpMoreData.png" />
+  <img src={require('@site/static/img/webhookHttpMoreData.png').default}/>
     _The responses are received and the data can be viewed if clicking on the green notification._ 
 </div>
 
