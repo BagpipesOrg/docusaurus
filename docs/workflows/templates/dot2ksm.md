@@ -13,7 +13,7 @@ _Here is a workflow that lets you send DOT to Kusama chain._
 </div>
 
 ## Try it here:   
-[https://app.xcmsend.com/#/builder](https://app.xcmsend.com/#/builder)   
+[https://app.xcmsend.com/#/builder]( https://app.xcmsend.com/#/create/?diagramData=mcNo3bMPY)   
 
 
 ## Video demo:
