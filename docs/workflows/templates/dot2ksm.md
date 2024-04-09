@@ -3,15 +3,15 @@ sidebar_position: 2
 ---
 # Polkadot to Kusama Transfers
 
-The long awaited Polkadot  Kusama bridge is here, and we wanted to be one of the first projects to document DOT transfers to kusama.
-
-In the community forum post Kusama Assethub to Polkadot assethub was shown. We have now figured out how to go from Polkadot Assethub to Kusama Assethub.  
-
-<img src={require('@site/static/img/dot2kus.png').default}  width="500"/>
+We support the Polkadot / Kusama bridge, which is accessible through both of their respective Asset Hubs.
 
 
+<div class="text--center">
+<img src={require('@site/static/img/dot2kus.png').default}  width="100%"/>
 
-> We have implemented DOT > kusama assethub transfers with Bagpipes!! You can now drag and drop together a transfer in seconds.   
+_Here is a workflow that lets you send DOT to Kusama chain._ 
+</div>
+
 ## Try it here:   
 [https://app.xcmsend.com/#/builder](https://app.xcmsend.com/#/builder)   
 
@@ -33,7 +33,7 @@ You can check out this call by going to polkadot.js apps and pasting it in the d
 Go to chainstate and query `foreignAssets`:  
 
 
-<img src={require('@site/static/img/screenshotDot2Kus.png').default}  width="500"/>
+<img src={require('@site/static/img/screenshotDot2Kus.png').default}  width="100%"/>
 
 
 #### Polkadot.js typescript code:  
