@@ -1,13 +1,15 @@
 # Polkadot to Kusama Transfers
 
-The long awaited Polkadot Assethub <> Kusama Assethub bridge is here and we wanted to be one of the first projects to document DOT transfers to kusama.
+The long awaited `Polkadot Assethub <> Kusama Assethub` bridge is here and we wanted to be one of the first projects to document DOT transfers to kusama.
 
 In the community forum post Kusama Assethub to Polkadot assethub was shown. We have now figured out how to go from Polkadot Assethub to Kusama Assethub.  
 
 ![](/img/dot_ksm.png) 
 
 
-> We have implemented DOT > kusama assethub transfers with Bagpipes!! You can now drag and drop together a transfer in seconds.   
+>  We have implemented DOT > kusama assethub transfers with Bagpipes!! You can now drag and drop together a transfer in seconds.   
+
+
 ## Try it here:   
 [https://app.xcmsend.com/#/builder](https://app.xcmsend.com/#/builder)   
 
