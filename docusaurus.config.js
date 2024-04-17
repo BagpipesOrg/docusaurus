@@ -79,6 +79,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+	  {label: "Try Bagpipes", position: 'left', href: "https://app.xcmsend.com"},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/xcmsend',
