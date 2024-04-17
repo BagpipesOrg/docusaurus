@@ -1,7 +1,7 @@
-# xTransfer  
+# Teleporting assets cross chain   
 
 
-Bagpipes currently supports the following transfers:
+We support the following XCM asset transfers:
 
 ```
 hydradx > assethub
@@ -15,5 +15,10 @@ assethub > interlay
 polkadot > hydradx
 polkadot > assethub
 
+polkadot > Kusama 
+
+Turing > Moonriver
+Moonriver > Turing  
+Turing > MangataX  
 
 ```
