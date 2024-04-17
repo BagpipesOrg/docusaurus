@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Bagpipes',
   staticDirectories: ['public', 'static'],
-  tagline: 'A powerful visual coding platform for Web3',
+  tagline: 'A powerful drag and drop platform for Web3',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,14 +45,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/xcmsend/docusaurus/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/xcmsend/docusaurus/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -108,7 +108,7 @@ const config = {
               // },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/37xpKPjdug',
               },
               {
                 label: 'Twitter',
