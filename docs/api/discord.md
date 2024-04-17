@@ -12,7 +12,7 @@ With Bagpipes bot, community can quickly generate a scenario and view it on the 
 
 #### Solve problems:  
 >  How do I transfer a token from chain a to b with XCM?   
->  Solve ["Jaspers" use case](/docs/users/profile#jasper-community-manager)  
+>  Solve ["Jaspers" use case](/users/profile.html#jasper-community-manager)  
 
 The bot allows you to generate a scenario id that you can view visually using the link.  
 
