@@ -3,7 +3,7 @@
 
 On our discord instance, you can utilize the BagpipeBOT for creating workflows, displaying workflow info and getting important links.
 
-> If you want to use the Bagpipes Bot on your own discord server, feel free to reach out to us on [Bagpipes discord server](https://xcmsend.github.io/api/discord_bot_commands.html)
+>  If you want to use the Bagpipes Bot on your own discord server, feel free to reach out to us on [Bagpipes discord server](https://xcmsend.github.io/api/discord_bot_commands.html)
 
 **BagpipesBot now supports slash commands!**
 
@@ -12,7 +12,7 @@ With Bagpipes bot, community can quickly generate a scenario and view it on the 
 
 #### Solve problems:  
 >  How do I transfer a token from chain a to b with XCM?   
->  Solve ["Jaspers" use case](/users/profile.html#jasper-community-manager)  
+>  Solve ["Jaspers" use case](/docs/users/profile#jasper-community-manager)  
 
 The bot allows you to generate a scenario id that you can view visually using the link.  
 
