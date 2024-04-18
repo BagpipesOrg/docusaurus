@@ -8,16 +8,8 @@
 We recommend that you connect talisman wallet and select your evm(0x) address as the destination address.  
 
 ###### Video turing 2 moonriver: 
+https://drive.google.com/file/d/1-dr8exA8TqwbuhJlqnkFnS-RkBGOm8YN/view?usp=sharing
 
-
-<iframe
-  width="560"
-  height="315"
-  src="https://drive.google.com/file/d/1-dr8exA8TqwbuhJlqnkFnS-RkBGOm8YN/preview"
-  frameborder="0"
-  allow="autoplay; encrypted-media"
-  allowfullscreen>
-</iframe>
 
 Link to template:  
 [https://app.xcmsend.com/#/create/?diagramData=k-2EaAM3l](https://app.xcmsend.com/#/create/?diagramData=k-2EaAM3l)   
@@ -28,6 +20,10 @@ Link to template:
 ![](/img/moonriver2turing_xcm.png)
 
 Select Moonriver as the source chain and turing as destination, after you press the green button and sign it. Press broadcast, once you get the transaction in a notification popup, copy the transaction and use the moonriver subscan block explorer linked below. 
+
+##### Video demo:   
+https://drive.google.com/file/d/1Jrl5DQzu_2t4iuBKVu_hyQqzdJ8HeL9B/view?usp=sharing  
+
 
 We use the substrate interface (xtokens pallet) to send Asset from Moonriver to other parachains.
 
