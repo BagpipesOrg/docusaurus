@@ -40,7 +40,7 @@ Link to template:
 
 Due to MangataX's transaction signing, we at the moment only support turing to mangatax transfers. If you have funds on MangataX and want to XCM them somewhere else we recommend that you use [https://app.mangata.finance](https://app.mangata.finance/).  
 
-
+[Turing > MangataX XCM Video demo](https://github.com/flipchan/Grants-Program-oak/blob/bagpipes_delivery/deliveries/bagpipes_m1.md)
 
 Link to template:  
 [https://app.xcmsend.com/#/create/?diagramData=H4jA_C5vt](https://app.xcmsend.com/#/create/?diagramData=H4jA_C5vt)
