@@ -8,12 +8,16 @@
 We recommend that you connect talisman wallet and select your evm(0x) address as the destination address.  
 
 ###### Video turing 2 moonriver: 
-<html>
-<video controls width="100%">
-  <source src="https://drive.google.com/uc?export=download&id=1-dr8exA8TqwbuhJlqnkFnS-RkBGOm8YN" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</html>
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://drive.google.com/file/d/1-dr8exA8TqwbuhJlqnkFnS-RkBGOm8YN/preview"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
 
 Link to template:  
 [https://app.xcmsend.com/#/create/?diagramData=k-2EaAM3l](https://app.xcmsend.com/#/create/?diagramData=k-2EaAM3l)   
