@@ -77,15 +77,16 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Wiki',
           },
-	  {label: "Try Bagpipes", position: 'left', href: "https://app.xcmsend.com"},
+	 
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/xcmsend',
             label: 'GitHub',
             position: 'right',
           },
+          {label: "Try Bagpipes", position: 'right', href: "https://app.xcmsend.com"},
         ],
       },
       footer: {

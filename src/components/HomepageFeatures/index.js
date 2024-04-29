@@ -4,21 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Fast',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Wiki',
+    Svg: require('@site/static/img/bagpipesSvg.svg').default,
     description: (
       <>
-	Drag and drop together a transaction flow in minutes      
+	Drag and drop together a transaction flow in minutes.     
 </>
     ),
   },
   {
-    title: 'Bring your own client library',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'SDK',
+    Svg: require('@site/static/img/bagpipesSvg.svg').default,
     description: (
       <>
-      Interact with your scenarios using our Json HTTP api in whatever programming language you want
+      Interact with your scenarios using our Json HTTP api in whatever programming language you want. 
 	</>
+    ),
+  },
+  {
+    title: 'Self Host Bagpipes',
+    Svg: require('@site/static/img/bagpipesSvg.svg').default,
+    description: (
+      <>
+        Run and persist your scenarios on your own infrastructure.
+      </>
     ),
   },
 ];
