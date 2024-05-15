@@ -4,15 +4,13 @@ sidebar_position: 3
 
 # Webhook Node
 
-- A webhook node allows you to receive data from anywhere. 
+- A Webhook Node allows you to receive data from anywhere. 
 
 - A webhook can only be used at the beginning of the workflow. 
 
 - Just generate a webhook endpoint URL, send some data there (via an http request using cURL, or Postman, etc), then when the event object data is received it can be and used your workflow. 
 
 - The event can also trigger you workflow to activate. 
-
-
 
 
 ### 1. Drop a webhook node
