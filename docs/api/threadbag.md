@@ -67,6 +67,7 @@ output:
 ```python
 import requests, time
 
+base = "https://th-0.bagpipes.io"
 scenario_id = "set scenario id here"
 print("Starting job: ")
 js = requests.post(base+"/job/start", json={"id": scenario_id})
@@ -88,10 +89,14 @@ print("Getting transaction queue: ", txmempool.text)
 
 
 ## Mempool:  
-
+After a worker has started, you can query the **/scenario/tx** path to get a list of the transactions that have been generated. Query the transaction queue and sign them locally. 
 
 
 ### Bring your own signer:    
+
+Bagpipes is non-custodial, meaning we only generate the transactions for you, you have to sign it yourself. In this typescript example, we will query for the transactions, validate them then sign and broadcast them.  
+
+
 ```typescript
 // fetch transaction list from threadbag
 async function fetchTxMempool(scenarioId: string): Promise<MempoolItem[]> {
@@ -149,20 +154,17 @@ async function main(){
     assert.strictEqual(fun_amount, "10,000,000,000"); // one do
     // convert tx to object
  const decodedTx = await api.registry.createType('Extrinsic', raw_tx);
-
-
     // get an account and sign and broadcast tx:
     const sender = get_account();
    const tx_out =  await api.tx(decodedTx).signAndSend(sender);
     console.log('tx_out: ', tx_out);
-
-
 }
-
 ```
 
 Template repo:
 https://github.com/XcmSend/threadbag-examples  
 
 
-### Enterprise/dedicated threadbag endpoints:  
+### Enterprise/dedicated threadbag endpoints:   
+For dedicated threadbags endpoint, submit a github issue here:       
+https://github.com/XcmSend/threadbag-examples/issues/new   
