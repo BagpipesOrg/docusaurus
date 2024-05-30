@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Chain Query Node
@@ -61,7 +61,5 @@ When the scenario is executed once, data will show in the event notifications. (
  <img src={require('@site/static/img/chainQuery6.png').default}/>
 
 Then hey presto! If you connect a node to the right of the  Chain Query node you will be able to use the output fields as Pills. 
-
-Then we send the request. Once it is sent the Webhook should receive the event, and you should get a notification that the webhook event is received. 
 
 
