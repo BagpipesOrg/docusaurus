@@ -2,7 +2,177 @@
 
 Threadbag lets you run any scenario that you continously in the main interface of Bagpipes.
 
-Your scenario will run, transactions and logs will be generated and then the threadbag worker sleeps for several hours and runs it again.  
+```ascii
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0OkO0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKxc';oXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOl':0WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd,'';dXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0d;,xodNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0d:'odl0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk:;:l;lKMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKl;;od,cXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx;;;od,oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo,::dd,dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXo:clddckWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkO0OokxkWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNkllxOXWkkWMMMMMMMMMMMMNNNWWMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXd,,cxNWxdWMMMMMMMMMMMXdldxKMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWO::oddxldWMMMMMMMMMMMK:':dXMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMXXWMMMMMMMMMMMMMMMMMMMMMM0c:oxKXx;lXMMWMMMMMMKxc,:ONMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMM0o0MMMMMMMMMMMMMMMMMMMMMWx;;okXMWd;dOKXXXKOkkd:,;ldKWMMMMMMMMMMMMWNWWWMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMWkoKMMMMMMMMMMMMMMMMMMMMNd,:xXNMNllK0OOkkOOOKk:c0NdoXMMMMMMMMMMMNxoxx0WMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMNddNMMMMMMMMMMMMMMMMMMMXo:lOWWWk',OWMMMMMMNOccOWMXdo0NMMMMMMWWNk;':oKWMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMKoxNMMMMMMMMMMMMMMMMMWKkkOXMMWx..xWMMMMMXo:;oXMMMN0xxOOOOOkkx:,;xKNMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMOckWMMMMMMMMMMMMMMMMW0llONMMWo..oNMMMMNd;,cOWMMMMMMNX0O0KKkl:ccxWMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMNo:kWMMMMMMMMMMMMMMMM0:cKMWMNc..:KMMMWO:,:kWMMMMMMMMMMMN0o:lONxlKMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMKlcKMMMMMMMMMMMMMMMMO:dNMWMX:..,0WMWXOdoOWMMMMMMMMMMWOo:;oXWMOl0MMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMM0coXMMMMMMMMMMMMMMWk:kWMWWK;..'kMMXdokKWMMMMMMMMMMXd:,;oKMMMOl0MMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMWkcxNMMMMMMMMMMMMMNoc0MMWMO,...xWWk;lKWMMMMMMMMMW0l;,cONMMMMOoKMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNdckNMMMMMMMMMMMW0loKMMMMXdcco0WO:cKMMMMMMMMMMNOxdoxXWMMMMMOdXMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMKlc0WMMMMMMMMMMNkdkXWMMMMMWWWW0cc0WMMMMMMMMMXd:oOXWMMMMMMMOxNMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMWOclKWMMMMMMMMMXo:xXMMMMMMMMN0dlOWMMMMMMMMW0c;dKWMMMMMMMMMxdNMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNxlkXWMMMMMMMMO:;xNMMMMMMMW0ddONMMMMMMMMXd:l0WMMMMMMMMMMWxdWMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMW0odOXMMMMMMMWx,:kWMMMMMMWOc:xXMMMMMMWXOo:xNMMMMMMMMMMMMNodWMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWOclONMMMMMMXo:lOWMMMMMW0:,c0MMMMMMW0dod0WMMMMMMMMMMMMMNodWMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMWWWNKkddkKXXNNN0lco0WMMMMW0:':kWMMWWN0o;:xKWMMMMMMMMMMMMMW0clXMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMWNX0OkkxddooooooddxxdlclOXWWMW0l;;d00OOOxl,';lkKXWWMMMMMMMMMMMWd.,kWMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWKkolccclollollollllooooooodxkOxc;:oddoool;',:looodk0XWMMMMMMMMMWd..xWMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWKxlccccc::cc::c::c::::lllllloooolc;;clll:,;ccclloodddxkKWMMMMMMMMXc..cXMMMMMMMMMM
+MMMMMMMMMMMMMMMMMNOc:::cc::;,;:,;:,';;,,;;ccllloooddoolcclc'..;ccccloodxxdkXMMMMMMMMK;..;0MMMMMMMMMM
+MMMMMMMMMMMMMMMMWkc;;::::lodddl,,,..''.'',;;:::clllooooolloc;;;;:::coodddodKWMMMMMMM0,..'OMMMMMMMMMM
+MMMMMMMMMMMMMMMMKc,,,;cd0NWWMWNOc........',,,;;::::cllllllloc::;:cc:clloold0WMMMMMMMO'...xWMMMMMMMMM
+MMMMMMMMMMMMMMMNx:,;;cONMMMMMMMMXl.........''',;,;;::ccccccllc::;;::::cclldKWMMMMMMMx....dWMMMMMMMMM
+MMMMMMMMMMMMMMMKxollo0WMMMMMMMMMMKc'..........',',,;;;;;::::c:;;;,;;;;:cclkNMMMMMMMM0c;;:OWMMMMMMMMM
+MMMMMMMMMMMMMMW0lcodkXMMMMMMMMMMMMKc.............',,,,,,;,,;;;;,,,,;;;:ccxNMMMMMMMMMMWNNWWMMMMMMMMMM
+MMMMMMMMMMMMMMMOlookNWMMMMMMMMMMMMMKo,...........'''',',,,,;;;;;;;;:::clkNMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMWx:lxXMMMMMMMMMMMMMMMMW0l,.......'''',,,,;;;;:::::::::cox0WMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMk,cKWMMMMMMMMMMMMMMMMMMWXkoc;'',,,,;,,;;;;;::::ccldxOKNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMWxc0MMMMMMMMMMMMMMMMMMMMMMMMWX0OkxxdddddddxkkO00KXNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMXldNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMOcOWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMNolXMMMMMMMMMMMMMMMThreadBagMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMOckWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+
+```
+
+
+Multi-threaded Persistence work server for Bagpipes. 
+
+
+Made with: A Tokio runtime, Polodb + Sled, Subxt and actix-web. 
+
+
+## Basics:
+
+Once we have created the scenario, we can run it continously with threadbag: 
+- Step 1: Start Job   
+- Step 2: Query for Logs
+- Step 3: Query for transactions
+
+
+
+
+Lets get started by creating a scenario in the main interface at alpha.bagpipes.io, copy the link and copy the scenario id. Then lets start the job: 
+![](/im
+
+## Basics:
+
+Once we have created the scenario, we can run it continously with threadbag: 
+- Step 1: Start Job   
+- Step 2: Query for Logs
+- Step 3: Query for transactions
+
+
+
+
+Lets get started by creating a scenario in the main interface at alpha.bagpipes.io, copy the link and copy the scenario id. Then lets start the job: 
+
+![](/img/basic.png) 
+
+
+
+### Start Job: 
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"id": "qSxt94jqC"}' https://th-0.bagpipes.io/job/start -v
+```
+
+
+### Stop Job: 
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"id": "qSxt94jqC"}' https://th-0.bagpipes.io/job/stop -v
+```
+
+### Query Job:
+After we have started the job we want to continously query for logs.  This can be see as the status update/main logger that will give you all output generated by the scenario worker. 
+
+Python code example:
+```python
+base = "https://api.bagpipes.io"
+scenario_id = "qSxt94jqC"
+logs = requests.post(base+"/scenario/worker/logs", json={"id": scenario_id})
+print("Logs returned: ", logs.text)
+```
+
+
+### Transaction Que  
+All transactions that gets drafted/generated for your scenarios, can be found here(`/scenario/tx`).  
+```python
+## Query for the transaction que 
+txmempool = requests.post(base+"/scenario/tx", json={"id": scenario_id})
+```
+
+An example for running a scenario with threadbag and your own local signer can be found here:
+
+
+
+
+```
+curl  -H 'content-type: application/json'  -d $'{"asset_id": 7, "address": "Assistant"}' https://webhook.bagpipes.io/94e08dc8-0573-43ac-95ba-bda15c6b3eda
+```
+)
+
+
+### Start Job: 
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"id": "qSxt94jqC"}' https://th-0.bagpipes.io/job/start -v
+```
+
+
+### Stop Job: 
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"id": "qSxt94jqC"}' https://th-0.bagpipes.io/job/stop -v
+```
+
+### Query Job:
+After we have started the job we want to continously query for logs.  This can be see as the status update/main logger that will give you all output generated by the scenario worker. 
+
+Python code example:
+```python
+base = "https://api.bagpipes.io"
+scenario_id = "qSxt94jqC"
+logs = requests.post(base+"/scenario/worker/logs", json={"id": scenario_id})
+print("Logs returned: ", logs.text)
+```
+
+
+### Transaction Que  
+All transactions that gets drafted/generated for your scenarios, can be found here(`/scenario/tx`).  
+```python
+## Query for the transaction que 
+txmempool = requests.post(base+"/scenario/tx", json={"id": scenario_id})
+```
+
+An example for running a scenario with threadbag and your own local signer can be found here:
+
+
+
+
+```
+curl  -H 'content-type: application/json'  -d $'{"asset_id": 7, "address": "Assistant"}' https://webhook.bagpipes.io/94e08dc8-0573-43ac-95ba-bda15c6b3eda
+```
 
 
 ## Endpoints:  
