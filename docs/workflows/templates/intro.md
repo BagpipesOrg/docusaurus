@@ -40,7 +40,10 @@ TODO
 Link:  
 
 
-#### Add more templates:  
-Add more templates to this documentation by submitting an issue on:  
+#### Add more templates:   
+-  1:  Create a scenario  
+-  2:  Copy link   
+![](/img/share_link_arrow.png)   
+-  3:  Write a description and submit a github pull request with your copied link here:   
 https://github.com/XcmSend/docusaurus/issues   
  
