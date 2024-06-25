@@ -1,4 +1,4 @@
-## Moonbeam parachain on Polkadot
+# Moonbeam parachain on Polkadot
 
 
 ![](/img/moonbeam.png)
