@@ -6,10 +6,10 @@ XCMSend comes prepackaged with test that dry run the functionality.
 
 ## Run tests:  
 ```shell
-$ git clone https://github.com/XcmSend/app.git  
-$ cd app/
-$ npm install
-$ npm run test
+git clone https://github.com/XcmSend/app.git  
+cd app/
+npm install
+npm run test
 ```
 
 ```shell

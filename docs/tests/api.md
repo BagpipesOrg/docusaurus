@@ -3,15 +3,15 @@
 
 ### Build:
 ```shell
-$ git clone https://github.com/XcmSend/api
-$ cd api/
-$ npm run buildme 
+git clone https://github.com/XcmSend/api
+cd api/
+npm run buildme 
 ```
 
 
 ### Run tests:
 ```shell
-$ npm run test
+npm run test
 
 > xcmsend-api@1.0.0 test
 > ts-node src/api/tests.ts

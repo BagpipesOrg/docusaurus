@@ -18,8 +18,8 @@ Get information about a scenario.
 
 ### Code:
 ```shell
-$ curl -X POST -H "Content-Type: application/json" -d '{"id": "Uvervffcw"}' http://localhost:8080/scenario/info
-$ {"result":"assetHub > xTransfer > polkadot"}
+curl -X POST -H "Content-Type: application/json" -d '{"id": "Uvervffcw"}' http://localhost:8080/scenario/info
+{"result":"assetHub > xTransfer > polkadot"}
 ```
 
 
@@ -27,9 +27,9 @@ $ {"result":"assetHub > xTransfer > polkadot"}
 
 ### Code:   
 ```shell
-$ curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/scenario/info/full
+curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/scenario/info/full
 
-$ {"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bfc29aac76cd546e2500ba2acbd00","summary":"turing > xTransfer > moonriver","asset":"0","amount":"100","source_chain":"turing","dest_chain":"moonriver","txtype":"xTransfer"}}
+{"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bfc29aac76cd546e2500ba2acbd00","summary":"turing > xTransfer > moonriver","asset":"0","amount":"100","source_chain":"turing","dest_chain":"moonriver","txtype":"xTransfer"}}
 ```
 
 
@@ -37,8 +37,8 @@ $ {"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bf
 Create a new scenario.  
 ### Code:
 ```shell
-$ curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "your address here", "amount": 100, "assetid": 0}' http://localhost:8080/create/scenario 
-$ {"result":"QWdI3KifK"}
+curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "your address here", "amount": 100, "assetid": 0}' http://localhost:8080/create/scenario 
+{"result":"QWdI3KifK"}
 ```
     
 After your scenario id is generated, you can import it in the ui:   
@@ -51,7 +51,7 @@ Swap an asset using the HydraDx omnipool.
 In this example we want to swap 10 amount of asset 0(HDX) for asset 5(DOT).  
 
 ```shell 
-$ curl -X POST -H "Content-Type: application/json" -d '{"assetin": 0, "assetout": 5, "amount": 10 }' http://localhost:8080/create/swap
+curl -X POST -H "Content-Type: application/json" -d '{"assetin": 0, "assetout": 5, "amount": 10 }' http://localhost:8080/create/swap
 {"success":true,"swap":{"swap_tx":"0xac043b05010000000500000000a0724e180900000000000000000000377d61b2850000000000000000000000","scenarioid":"IkwpZfaqF"}}
 
 ```
@@ -80,7 +80,7 @@ Transfer an on-chain asset from one polkadot connected parachain to another
 
 ##### Code example:   
 ```shell
-$ curl -X POST http://127.0.0.1:8080/xcm-asset-transfer   -H "Content-Type: application/json"   -d '{
+curl -X POST http://127.0.0.1:8080/xcm-asset-transfer   -H "Content-Type: application/json"   -d '{
     "sourchain": "assethub",
     "destchain": "hydradx",
     "assetid": "1984",

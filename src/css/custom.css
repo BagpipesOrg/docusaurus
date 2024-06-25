@@ -5,6 +5,7 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
 
 
 /* You can override the default Infima variables here. */
@@ -18,9 +19,17 @@
   --ifm-color-primary-lightest: #92c6ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'Lexend';
-  --ifm-heading-font-family: 'Lexend';
-  --ifm-font-family-monospace: 'Lexend';
+  --ifm-font-family-base: 'Lexend', sans-serif;
+  --ifm-heading-font-family: 'Lexend', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace !important;
+
+
+  /* Add custom font weights */
+  --ifm-font-weight-light: 300;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-medium: 500;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -33,4 +42,45 @@
   --ifm-color-primary-lighter: #83bfff;
   --ifm-color-primary-lightest: #b8daff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+body {
+  /* font-family: var(--ifm-font-family-base); */
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: var(--ifm-font-weight-bold);
+}
+
+p, span, a {
+  /* font-family: var(--ifm-font-family-base); */
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+code, pre, .code-block, .inline-code  .theme-code-block, .theme-code, .token-line, [class*='codeBlockLines'] {
+  font-family: var(--ifm-font-family-monospace) !important;
+  font-weight: var(--ifm-font-weight-bold);
+}
+
+.light-text {
+  font-weight: var(--ifm-font-weight-light);
+}
+
+.normal-text {
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.medium-text {
+  font-weight: var(--ifm-font-weight-medium);
+}
+
+.semibold-text {
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.bold-text {
+  font-weight: var(--ifm-font-weight-bold);
 }

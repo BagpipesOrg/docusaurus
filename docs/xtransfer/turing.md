@@ -57,17 +57,17 @@ When your sending from Moonriver use this:
 ### Use Turing with our api:  
 
 ```shell  
-$ git clone https://github.com/XcmSend/api/   
-$ cd api/ && npm install -f && npm run build 
-$ npm run api
-$ curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "0xA68db75204262BFC29aaC76CD546E2500Ba2AcBd", "amount": 100, "assetid": 0}' http://localhost:8080/create/scenario 
+git clone https://github.com/XcmSend/api/   
+cd api/ && npm install -f && npm run build 
+npm run api
+curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "0xA68db75204262BFC29aaC76CD546E2500Ba2AcBd", "amount": 100, "assetid": 0}' http://localhost:8080/create/scenario 
 
-$ {"result":"SFdcb77BY"}
+{"result":"SFdcb77BY"}
 
 
-$ curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/scenario/info/full
+curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/scenario/info/full
 
-$ {"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bfc29aac76cd546e2500ba2acbd00","summary":"turing > xTransfer > moonriver","asset":"0","amount":"100","source_chain":"turing","dest_chain":"moonriver","txtype":"xTransfer"}}
+{"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bfc29aac76cd546e2500ba2acbd00","summary":"turing > xTransfer > moonriver","asset":"0","amount":"100","source_chain":"turing","dest_chain":"moonriver","txtype":"xTransfer"}}
 ```
 
 
