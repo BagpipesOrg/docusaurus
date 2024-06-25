@@ -33,7 +33,7 @@ Bagpipes supports all xc-20 assets that are registered on Moonbeam.
 
 
 #### Chain Query:    
-![](/img/moonquery.png)  
+![](/img/moonbeamquery.png)  
 Query any storage item in Moonbeam.
 
 #### ChainTx:    
