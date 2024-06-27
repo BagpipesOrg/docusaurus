@@ -7,16 +7,16 @@
 
 ## Clone:  
 ```shell
-$ git clone https://github.com/XcmSend/api
+git clone https://github.com/XcmSend/api
 ```
 
 
 ## Build: 
 ```shell
-$ npm run buildme
+npm run buildme
 ```
 
 ## Run:  
 ```shell
-$ npm run api
+npm run api
 ```

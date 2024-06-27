@@ -5,7 +5,7 @@
 
 ### Requirements:   
 -  Python 3  
--  requests and flask(`$ pip3 install flask requests`)
+-  requests and flask(`pip3 install flask requests`)
 
 
 ```shell
@@ -66,6 +66,6 @@ if __name__ == "__main__":
 
 ### Run it:  
 ```shell
-$ python3 app.py
+python3 app.py
 ```
 
