@@ -1,0 +1,8 @@
+{
+  "label": "Chains",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "A collection of chains that can be used to build your own Bagpipes applications."
+  }
+}
