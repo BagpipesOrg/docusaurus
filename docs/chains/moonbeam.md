@@ -62,7 +62,7 @@ Bagpipes supports all XC-20 assets registered on Moonbeam. You can transfer, man
 
 | Info                             | Links                                                                                                                   |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| **XC-20 Assets**                 | Ensure your assets are XC-20 compliant for smooth operations.                                                           |
+| **XC-20 Assets**                 | Ensure your assets are XC-20 compliant and that the asset is avaliable/registerd on both the source and destination chain for smooth operations.                                                           |
 | **List of supported assets**     | [View Supported Assets on Moonbeam](https://docs.moonbeam.network/builders/interoperability/xcm/xc20/overview/)          |
 
 ---
