@@ -15,7 +15,7 @@ Build your own docker image based on the latest code in the main branch.
 
 ## Download from Dockerhub
 ```shell
-docker pull xcmsend/xcmsend:v0.1.0
+docker pull xcmsend/xcmsend:v0.2.0
 ```
 
 
