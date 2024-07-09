@@ -53,6 +53,7 @@ _Above is an example of sending 3 HDX from Moonbeam to Hydration (HydraDx) chain
 |-----------------------------|------------------------------------------------------------------------------------------------------------|
 | **Template Link**           | [Create Transfer Workflow](https://alpha.bagpipes.io/#/create/?diagramData=sPn_LOKiE)                       |
 | **Hydration Documentation** | [Visit Hydration Docs](https://docs.hydration.io/)                                                           |
+| **Video user example** | [Video link](https://drive.google.com/file/d/1tdylaa5IpgFAczej1ZbenKQQEqZ4dKmk/view?usp=sharing)                                                           |
 
 ---
 
