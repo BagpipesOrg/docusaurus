@@ -19,6 +19,7 @@ _Above is an example of sending 5 USDT from Moonbeam to AssetHub_
 |--------------------------|--------------------------------------------------------------------------------------------------------|
 | **Template Link**        | [Create Transfer Workflow](https://alpha.bagpipes.io/#/create/?diagramData=TpHPJ3DEQ)                  |
 | **Assethub Documentation** | [Visit Assethub Docs](https://docs.assethub.network/)      
+| **Video user example** | [Video link](https://drive.google.com/file/d/1e5cOulATbep0gxdPo95i5Dp5HLhtuuvS/view?usp=sharing)                                                           |  
 
 
 ---                                  
