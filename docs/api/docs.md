@@ -13,45 +13,55 @@ The format is `{storage_key, compressed_diagramdata}`
 
 ### Paths:  
 
-##### Path: `/scenario/info`;   
+##### Path: `/api/scenario/info`;   
 Get information about a scenario.  
 
 ### Code:
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"id": "Uvervffcw"}' http://localhost:8080/scenario/info
+curl -X POST -H "Content-Type: application/json" -d '{"id": "Uvervffcw"}' http://localhost:8080/api/scenario/info
 {"result":"assetHub > xTransfer > polkadot"}
 ```
 
+##### Path: `/api/template/stats/<chain>`:  
 
-## Path `/scenario/info/full`:  
+### Code:
+```shell
+curl http://127.0.0.1:8080/api/template/stats/assetHub
+{"Amount":2} 
+curl http://127.0.0.1:8080/api/template/stats/polkadot
+{"Amount":1}
+```
+
+
+## Path `/api/scenario/info/full`:  
 
 ### Code:   
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/scenario/info/full
+curl -X POST -H "Content-Type: application/json" -d '{"id": "SFdcb77BY"}' http://localhost:8080/api/scenario/info/full
 
 {"result":{"tx":"0xa8042c0103000101000921009101030102009d1f0300a68db75204262bfc29aac76cd546e2500ba2acbd00","summary":"turing > xTransfer > moonriver","asset":"0","amount":"100","source_chain":"turing","dest_chain":"moonriver","txtype":"xTransfer"}}
 ```
 
 
-## Path: `/create/scenario`;   
+## Path: `/api/create/scenario`;   
 Create a new scenario.  
 ### Code:
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "your address here", "amount": 100, "assetid": 0}' http://localhost:8080/create/scenario 
+curl -X POST -H "Content-Type: application/json" -d '{"source_chain": "turing", "dest_chain": "moonriver", "destination_address": "your address here", "amount": 100, "assetid": 0}' http://localhost:8080/api/create/scenario 
 {"result":"QWdI3KifK"}
 ```
     
 After your scenario id is generated, you can import it in the ui:   
 `http://localhost:5173/#/create/?diagramData=MY_SCENARIO_ID`
     
-## `/create/swap`:
+## `/api/create/swap`:
 Swap an asset using the HydraDx omnipool.
 
 ### Code:
 In this example we want to swap 10 amount of asset 0(HDX) for asset 5(DOT).  
 
 ```shell 
-curl -X POST -H "Content-Type: application/json" -d '{"assetin": 0, "assetout": 5, "amount": 10 }' http://localhost:8080/create/swap
+curl -X POST -H "Content-Type: application/json" -d '{"assetin": 0, "assetout": 5, "amount": 10 }' http://localhost:8080/api/create/swap
 {"success":true,"swap":{"swap_tx":"0xac043b05010000000500000000a0724e180900000000000000000000377d61b2850000000000000000000000","scenarioid":"IkwpZfaqF"}}
 
 ```
@@ -72,7 +82,7 @@ Sign and broadcast the swap_tx or view the scenario in our main UI with the scen
 
 
 
-#### `/xcm-asset-transfer`:  
+#### `/api/xcm/asset-transfer`:  
 
 ##### Info:  
 Transfer an on-chain asset from one polkadot connected parachain to another
@@ -80,7 +90,7 @@ Transfer an on-chain asset from one polkadot connected parachain to another
 
 ##### Code example:   
 ```shell
-curl -X POST http://127.0.0.1:8080/xcm-asset-transfer   -H "Content-Type: application/json"   -d '{
+curl -X POST http://127.0.0.1:8080/api/xcm/asset-transfer   -H "Content-Type: application/json"   -d '{
     "sourchain": "assethub",
     "destchain": "hydradx",
     "assetid": "1984",
@@ -101,7 +111,7 @@ curl -X POST http://127.0.0.1:8080/xcm-asset-transfer   -H "Content-Type: applic
 
 
 
-## `/polkadot/openchannels`  
+## `/api/hrmp/polkadot/openchannels`  
 
 ##### Info:  
 Check what hrmp channels are avaliable for a parachain connected to polkadot.  
@@ -117,20 +127,15 @@ Result:
 `{"open_hrmp_channels":1001,1002,2000,2004,2006,2007,2011,2012,2013,2030,2031,2032,2034,2035,2040,2046,2048,2051,2094,2101,2104],"sourcechain":1000}`
 
 
-## `/call/template`  
 
-##### Info:  
-Coming soon
+##### Path: `/api/actions/query`:
 
+### Code:
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"chain": "polkadot", "pallet_name": "timestamp", "method_name": "now", "params": []}' http://localhost:8080/api/actions/query
+{"result":"1,716,394,878,001"}
 
-#### `/call/scenario`  
-
-##### Info:  
-Coming soon
-
-
-
-## `/broadcast`:
+## `/api/chain/Broadcast`:
 
 ###### Information:  
 Broadcast a transaction using author submitextrinsics 
@@ -185,7 +190,7 @@ Copy the verified tx and curl it to the broadcast api:
 curl -X POST -H "Content-Type: application/json" -d '{
   "chain": "polkadot",
   "tx": "0x8d0284005400e2f7f5669b26998d8e4d3c1a2c8a2d0a9af827ca54a1cc3509105035c32e01286f7090ae34a1e3b8827ef9c035ede86a2b3e5c16bb6df072541327c7797d07e5934e245ae7c9ce199b2212fe559ff2df0a9ad1d66421aa3828223d8b2e9c8b45020400630803000100c91f0300010100f43376315face751ae6014e8a94301b2c27c0bc4a234e9997ed2c856d13d3d2f030400000000823801000000000000"
-}' http://127.0.0.1:8080/broadcast
+}' http://127.0.0.1:8080/api/chain/Broadcast
 ```
 
 Result:  
