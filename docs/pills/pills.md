@@ -1,4 +1,4 @@
-# Intro to Pills
+# 💊 Intro to Pills
 
 Pills are small draggable elements you can drop into a field of a form. There are different kinds of pills, including Variable, Function, Operand, Keywords, and Math pills.
 
@@ -6,7 +6,7 @@ Pills are small draggable elements you can drop into a field of a form. There ar
 Data Pills are dynamic variables used to represent key values in a form. Instead of hardcoding a form with a fixed number or string, you can use Data Pills to represent values that are not yet known but have a defined purpose. For example, an address pill could contain different addresses at different times, depending on the data received from an upstream node.
 
  <img src={require('@site/static/img/chainQuery6.png').default}/>
-_Above is an example of a data pill being added to a HTTP request field. 
+_Above is an example of a data pill being added to a HTTP request field._ 
 
 ## Function Pills 
 Function Pills allow you to add functions to a form field that take inputs and produce an output. There are several types of Function Pills, each tailored to specific operations:

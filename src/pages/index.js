@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro/concepts">
-           Bagpipes documentation 
+           Bagpipes Docs
           </Link>
         </div>
       </div>
