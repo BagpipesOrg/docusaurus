@@ -10,16 +10,17 @@ sidebar_position: 6
 
 
 ### 1. Drop a Chain Tx node
-Drag and drop a chain query node into the scenario
- <img src={require('@site/static/img/chainQuery0.png').default}  width="500"/>
+Drag and drop a Chain Tx node into the scenario
+ <img src={require('@site/static/img/chainTx1.png').default}  width="500"/>
 
 
 ### 2. Chain Tx Form
 
-Enter the `chain`, `pallet`, `method`, and fill out the `method fields` (if required) to query the storage of the substrate chain.  
+Enter the `chain`, `pallet`, `method`, and fill out the `method fields` (if required) to create a transaction on the substrate chain.  
 
+:::tip [Tip]
 If you leave the blockhash/blocknumber field empty then it will default to the latest block. 
-
+:::
 
 <div class="text--center">
  <img src={require('@site/static/img/chain_query1.png').default}  width="500"/>
@@ -44,7 +45,7 @@ Take care with a free input as you may get data validation issues so you have to
 
 :::
 ### 3. Execute Method Once
-You can execute and transaction the chain individually, without it being part of thw scenario workflow. Just click `Run Method Once` and you will get the output below.  
+You can execute and transaction the chain individually, without it being part of the scenario workflow. Just click `Run Method Once` and you will get the output below.  
 
 <img src={require('@site/static/img/chainQuery2.png').default}  width="500"/>
 

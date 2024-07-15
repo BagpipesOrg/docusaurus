@@ -1,7 +1,7 @@
 <img src="/img/moonbeam.png" alt="Moonbeam Parachain Logo" width="300" />
 # Moonbeam Parachain on Polkadot
 
-Welcome to the Moonbeam Parachain on Polkadot documentation! Dive in and explore how to seamlessly transfer assets and interact with other parachains using Bagpipes.
+Welcome to the Moonbeam Parachain on Bagpipes documentation! Dive in and explore how to seamlessly transfer assets and interact with other parachains using Bagpipes.
 
 ## Support XCM Asset Transfers
 

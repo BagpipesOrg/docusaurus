@@ -1,7 +1,7 @@
 <img src="/img/moonbeam.png" alt="Moonbeam Parachain Logo" width="300" />
 # Moonbeam Parachain on Polkadot
 
-Welcome to the Moonbeam Parachain on Polkadot documentation! Dive in and explore how you can use moonbeam chain and seamlessly interact with other parachains using Bagpipes.
+Welcome to the Moonbeam Parachain on Bagpipes documentation! Dive in and explore how you can use moonbeam chain and seamlessly interact with other parachains using Bagpipes.
 
 ## Asset Transfers
 

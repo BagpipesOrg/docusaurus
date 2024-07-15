@@ -24,7 +24,40 @@ An execution is a single run-through of operations within a scenario. A scenario
 
 ## Pills
 
-Pills are small draggable key elements that represent key values. When you receive data from upstream that is in an expected structure you can use pills to represent variables. 
+Pills are small draggable elements you can drop into a field of a form. There are different kinds of [pills](../pills/pills.md)
+
+
+
+### Variable Pills
+One of the main uses of pills are as variables to represent key values. So instead of hardcoding a form with a fixed number or string, you can make it dynamic. When you receive data from an upstream node you can use pills that will represent a value that is yet to be known, but its purpose is known. For example: an address pill, which is a variable that will contain an address that changes. 
+
+
+### Function Pills 
+Function pills are pills you can drop into a field that let you add inputs which will produce an output. There are different types of function pills. 
+
+#### Format Conversion Pills
+If you have some data and you want to convert it to a different form. You can drop in a format conversion pill. For example, you have a string that you want to convert to bytes. You can just drop a `stringToBytes()` pill into an input field, and then that will convert the format of the data (or variable pills) you add inside the brackets of this pill at execution time, from string to bytes. 
+
+There are also: 
+
+  ...logicFunctionPills,
+  ...mathFunctionPills,
+  ...textBinaryFunctionPills,
+  ...encodeFunctionPills,
+  ...formatConversionPills,
+  ...cryptographicHashFunctionPills,
+  ...arrayFunctionPills,
+  ...collectionFunctionPills,
+  ...dateTimeFunctionPills,
+
+There are various other pills as well, such as  `operands`, `keywords` and `math`.
+
+
+
+
+
+
+
 
 ## Persist a Scenario
 
