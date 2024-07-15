@@ -1,4 +1,4 @@
-# Pills
+# Intro to Pills
 
 Pills are small draggable elements you can drop into a field of a form. There are different kinds of pills, including Variable, Function, Operand, Keywords, and Math pills.
 
