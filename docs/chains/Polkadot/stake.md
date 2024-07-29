@@ -2,6 +2,7 @@
 
 For smaller amounts of `$DOT` you can use nomination pools in order to earn rewards. 
 
+In this example we will stake 1 DOT into pool `123`:  
 ![](/img/nompool.png)
 
 
