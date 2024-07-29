@@ -6,6 +6,7 @@ Anyone can participate in Polkadot's governance, by selecting a chain node and a
 
 ![](/img/voteopengov.png)   
 
+
 **Template link:**    
 https://alpha.bagpipes.io/#/create/?diagramData=GtVMt1gpV 
 
