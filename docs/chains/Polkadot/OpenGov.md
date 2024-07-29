@@ -2,10 +2,16 @@
 
 
 ## Vote in OpenGov:   
+Anyone can participate in Polkadot's governance, by selecting a chain node and an action node and selection Vote, you can vote using Bagpipes.   
+
 ![](/img/voteopengov.png)   
 
 **Template link:**    
 https://alpha.bagpipes.io/#/create/?diagramData=GtVMt1gpV 
+
+Active proposals:  
+https://polkadot.subsquare.io/referenda  
+https://polkadot.polkassembly.io/treasury-proposals
 
 
 #### Vote with dot held on parachains:  
