@@ -9,6 +9,30 @@ To get started, you will need the source code and the address of the smart contr
 -  [x] Rococo Contracts chain
 
 
+### Get started 
+
+In order to build ink contracts we need to install [cargo-contract](https://github.com/use-ink/cargo-contract):   
+```shell
+cargo install --force --locked cargo-contract
+```
+
+Create a new contract:   
+
+```shell
+cargo contract new test_contract
+```
+
+Build contract:   
+```shell   
+cd test_contract/ && cargo contract build   
+```
+
+Get some testnet tokens using the public faucet:   
+[use.ink/faucet](https://use.ink/faucet)   
+
+Upload contract:  
+Use [ui.use.ink](https://ui.use.ink/) to upload your contract to the testnet.   
+ 
 
 
 #### Read more about ink here:    
