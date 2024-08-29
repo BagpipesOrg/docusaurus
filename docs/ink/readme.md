@@ -35,8 +35,10 @@ Use [ui.use.ink](https://ui.use.ink/) to upload your contract to the testnet.
 
 
 Query the contract on-chain using Bagpipes:    
-![](/img/contracts_ink.png)   
-  
+![](/img/contracts_ink.png)    
+
+Template link:  
+[https://alpha.bagpipes.io/#/create/?diagramData=NmtfKAsjz](https://alpha.bagpipes.io/#/create/?diagramData=NmtfKAsjz)    
 
 
 #### Read more about ink here:    
