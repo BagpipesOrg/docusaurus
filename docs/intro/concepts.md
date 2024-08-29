@@ -71,17 +71,19 @@ Here are a list of nodes, which each have a different purpose.
 
 A chain node is an object that represents a blockchain. A chain node needs to be used in conjuction with an Action Node. A chain node represents either the source or the destination in relation to an action. 
 
-[more](/nodes/chain.md)
+[learn more](/nodes/chain.md)
 
 
 ### 2. [Action Node](/nodes/action.md)   
 You can drag in an action node between two chains, the action is either xTransfer or Swap.
 
-[more](/nodes/action.md)
+[learn more](/nodes/action.md)
 
 #### Actions
 
 Actions are otherwise referred to as blockchain transactions or extrinsics, which is something that is signed by a user and put on-chain. 
+
+
 
 ##### xTransfer 
 
@@ -95,15 +97,29 @@ Swap = Selling on asset for another asset on a decentralized exchange.
 
 _Note: we currently only support HydraDx to HydraDx swaps at the moment._  
 
-### 3. [Webhook Node](nodes/webhook.md)
+### 3. [Chain Query Node](nodes/chainQuery.md)
 
 A webhook node allows you to receive data. A webhook can only be used at the beginning of the workflow. Just generate a webhook endpoint URL, send some data there (via an http request using cURL, or Postman, etc), then when the event object data is received it can be and used your workflow. The event can also trigger you workflow to activate. 
 
-[more](/nodes/webhook.md)
+[learn more](/nodes/chainQuery.md)
 
-### 4. [HTTP Node](nodes/webhook.md)
+### 4. [Chain Tx Node](nodes/chainTx.md)
+
+A webhook node allows you to receive data. A webhook can only be used at the beginning of the workflow. Just generate a webhook endpoint URL, send some data there (via an http request using cURL, or Postman, etc), then when the event object data is received it can be and used your workflow. The event can also trigger you workflow to activate. 
+
+[learn more](/nodes/chainTx.md)
+
+
+
+### 5. [Webhook Node](nodes/webhook.md)
+
+A webhook node allows you to receive data. A webhook can only be used at the beginning of the workflow. Just generate a webhook endpoint URL, send some data there (via an http request using cURL, or Postman, etc), then when the event object data is received it can be and used your workflow. The event can also trigger you workflow to activate. 
+
+[learn more](/nodes/webhook.md)
+
+### 6. [HTTP Node](nodes/webhook.md)
 
 A HTTP allows you to make almost any kind of HTTP(s) request on the internet! When you use this node to make an HTTP request, the response data (or event data) can be used in your workflow. It's a very powerful node that unlocks a lot of possibilities. 
 
-[more](/nodes/http.md)
+[learn more](/nodes/http.md)
 

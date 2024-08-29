@@ -3,7 +3,9 @@
 Pills are small draggable elements you can drop into a field of a form. There are different kinds of pills, including Variable, Function, Operand, Keywords, and Math pills.
 
 ## Data Pills
-Data Pills are dynamic variables used to represent key values in a form. Instead of hardcoding a form with a fixed number or string, you can use Data Pills to represent values that are not yet known but have a defined purpose. For example, an address pill could contain different addresses at different times, depending on the data received from an upstream node.
+Data Pills are dynamic variables used to represent key values in a form. Instead of hardcoding a form with a fixed number or string, you can use Data Pills to represent values that are not yet known but have a #. Meaning, you dont have to hard code values. For example, a pill that represents `free` balance, could contain different addresses at different times, depending on the data passed in from an upstream node. 
+
+Data Pills are what turn your Bagpipe scenarios into apps other people can use. 
 
  <img src={require('@site/static/img/chainQuery6.png').default}/>
 _Above is an example of a data pill being added to a HTTP request field._ 
