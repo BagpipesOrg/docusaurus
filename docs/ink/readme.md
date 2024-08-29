@@ -32,7 +32,11 @@ Get some testnet tokens using the public faucet:
 
 Upload contract:  
 Use [ui.use.ink](https://ui.use.ink/) to upload your contract to the testnet.   
- 
+
+
+Query the contract on-chain using Bagpipes:    
+![](/img/contracts_ink.png)   
+  
 
 
 #### Read more about ink here:    
