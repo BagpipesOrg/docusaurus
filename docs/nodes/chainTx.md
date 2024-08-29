@@ -28,12 +28,12 @@ Enter the `chain`, `pallet`, `method`, and fill out the `method fields` (if requ
 
 :::tip [Pro tip]
 ### Supercharge with Pills
-Dont' forget you can use the outputs from upstream nodes (aka [Pills](/pills/pills.md)), to drop into a field of your choice. 
+Dont' forget you can use the outputs from upstream nodes (aka [Pills](/docs/pills)), to drop into a field of your choice. 
 
 <img src={require('@site/static/img/chainTx6.png').default}  width="500"/>
 _in the above example, the upstream connected node is a Query Chain node, you will have access to its expected outputs. If you have more then one connected upstream node then you have access to all of its outputs._
 
-Find out more [here](/docs/nodes/pills/pills.md))
+Find out more [here](/docs/pills))
 
 
 :::
