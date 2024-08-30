@@ -30,7 +30,8 @@ cd test_contract/ && cargo contract build
 Get some testnet tokens using the public faucet:   
 [use.ink/faucet](https://use.ink/faucet)   
 
-Upload contract:  
+Upload the .contract file found `target/ink/`:    
+![](/img/ink_deploy.png)     
 Use [ui.use.ink](https://ui.use.ink/) to upload your contract to the testnet.   
 
 

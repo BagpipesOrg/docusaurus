@@ -22,6 +22,18 @@ curl -X POST -H "Content-Type: application/json" -d '{"id": "Uvervffcw"}' http:/
 {"result":"assetHub > xTransfer > polkadot"}
 ```
 
+##### Path: `/api/info/preview`;   
+Get generate preview information about scenario.  
+### Code:
+```shell
+curl -XGET https://api.bagpipes.io/api/info/preview -d {scenario_id: 'scenario id goes here'}
+```
+#### Output:
+```json
+{ info: "same info as /api/scenario/info", img: "base64 encoded image of the scenario" }
+```
+
+
 ##### Path: `/api/template/stats/<chain>`:  
 
 ### Code:
