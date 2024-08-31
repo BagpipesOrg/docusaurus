@@ -35,6 +35,10 @@ Upload the .contract file found `target/ink/`:
 Use [ui.use.ink](https://ui.use.ink/) to upload your contract to the testnet.   
 
 
+Copy the address of the deployed contract:    
+![](/img/copy_contract_address.png)   
+
+
 Query the contract on-chain using Bagpipes:    
 ![](/img/contracts_ink.png)    
 
