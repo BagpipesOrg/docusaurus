@@ -46,6 +46,26 @@ Template link:
 [https://alpha.bagpipes.io/#/create/?diagramData=NmtfKAsjz](https://alpha.bagpipes.io/#/create/?diagramData=NmtfKAsjz)    
 
 
+### Use the api:     
+Get the contracts .json file and the address of the contract.   
+
+```shell  
+curl -X POST http://localhost:8080/api/ink/contract_info \
+     -H "Content-Type: application/json" \
+     -d @- <<EOF
+{
+  "abiJson": $(cat flipper.json),
+  "address": "5GLTeaqe8DqZbqhhzV6i2MdaG5zJbps84KwgjewUVo75gwga"
+}
+> 
+> EOF
+```  
+output:   
+```json  
+{"sucess":true,"description":[{"function_name":"flip","selector":"0x633aa551","mutates":true,"args":[]},{"function_name":"get","selector":"0x2f865bd9","mutates":false,"args":[]}]}
+```
+
+
 #### Read more about ink here:    
 [Parity data ink dashboard](https://dashboards.data.paritytech.io/ink.html)      
 [ink main site](https://use.ink/)   
