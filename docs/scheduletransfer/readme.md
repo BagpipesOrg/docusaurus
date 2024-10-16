@@ -4,8 +4,9 @@
 
 We support the following XCM schedule directions:
 
-### Turing > Moonriver: 
-screenshot coming soon   
+### Turing > Moonriver:    
+![](/img/tur2ms.png)     
+![](/img/tur2msr.png)      
 
 Link:   
 https://app.xcmsend.com/#/create/?diagramData=JoPtE8CaT
