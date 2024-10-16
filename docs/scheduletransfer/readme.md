@@ -5,7 +5,7 @@
 We support the following XCM schedule directions:
 
 ### Turing > Moonriver: 
-<screenshot coming soon>   
+screenshot coming soon   
 
 Link:   
 https://app.xcmsend.com/#/create/?diagramData=JoPtE8CaT
@@ -13,7 +13,7 @@ https://app.xcmsend.com/#/create/?diagramData=JoPtE8CaT
 
 
 ### Turing > MangataX:
-<screenshot coming soon>   
+screenshot coming soon   
 
 
 Link:
