@@ -14,7 +14,8 @@ We have enabled all queries being made using the ChainQuery node to use Smoldot.
 ![](/img/smoldotpoc.png)     
     
 Template Link:   
-Coming soon...
+https://app.xcmsend.com/#/create/?diagramData=nlSg50JSr   
+
 
 #### Use with docker:   
 You can use our public docker image to run it locally:    
