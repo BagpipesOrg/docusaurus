@@ -79,6 +79,12 @@ const config = {
             position: 'left',
             label: 'Wiki',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'sdkSidebar',
+            position: 'left',
+            label: 'SDK',
+          },
 	 
           {to: '/blog', label: 'Blog', position: 'left'},
           {
