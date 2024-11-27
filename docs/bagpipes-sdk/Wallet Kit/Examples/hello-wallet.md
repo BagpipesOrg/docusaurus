@@ -2,16 +2,14 @@ import YarnOrNpmToggle from '@site/src/components/YarnOrNpmToggle';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# Add Wallet to DApp
+## Bagpipes Wallet "Hello World"
 
-# Bagpipes Wallet "Hello World"
-
-## Creating a React Vite Template with @bagpipes/wallet
+### Creating a React Vite Template with @bagpipes/wallet
 
 Here is a "Hello World" DApp using @bagpipes/wallet. We will build this using React Vite. 
 
 Users can easily fork this template and start building their applications with wallet functionalities already set up.
-
-
 
 ## Table of Contents
 1. Prerequisites
@@ -34,48 +32,46 @@ Users can easily fork this template and start building their applications with w
 - Git (optional, for version control and hosting on GitHub)
 
 ## Project Setup
-1. Create a New Vite React Project
+
+### 1. Create a New Vite React Project
 
 We'll use Vite to set up a fast and lightweight React project.
 
-<Tabs>
+<Tabs groupId="npmOrYarn">
+<TabItem value="npm" label="npm">
+```
+npm create vite@latest bagpipes-wallet-template -- --template react
+```
+</TabItem>
   <TabItem value="yarn" label="Yarn" default>
 ```bash
-
-# Using Yarn
 yarn create vite bagpipes-wallet-template --template react
 ```
 </TabItem> 
-<TabItem value="npm" label="npm">
 
-```
-# Using npm
-npm create vite@latest bagpipes-wallet-template -- --template react
-```
-</TabItem></Tabs>
+</Tabs>
 
 Navigate to the project directory:
 
 ```bash
-
 cd bagpipes-wallet-template
 ```
 
-2. Initialize Git (Optional)
+### 2. Initialize Git (Optional)
 
 If you plan to host this template on GitHub or another Git repository, initialize Git:
 
 ```bash
 git init
 ```
-Installing Dependencies
-1. Install Project Dependencies
+## Installing Dependencies
+### 1. Install Project Dependencies
+
 First, install the basic dependencies:
 
-<Tabs>
+<Tabs groupId="npmOrYarn">
 <TabItem value="npm" label="npm">
 ```bash
-# Using npm
 npm install
 ```
 </TabItem>
@@ -83,26 +79,21 @@ npm install
 <TabItem value="yarn" label="Yarn">
 
 ```
-# Using Yarn
 yarn
 ```
-</TabItem>
+</TabItem></Tabs>
 
-</Tabs>
-
-2. Install @bagpipes/wallet and Other Necessary Packages
-<Tabs>
+### 2. Install @bagpipes/wallet and Other Necessary Packages
+<Tabs groupId="npmOrYarn">
 <TabItem value="npm" label="npm">
 
 ```bash
-# Using npm
 npm install @bagpipes/wallet @polkadot/util-crypto
 ```
 
 </TabItem><TabItem value="yarn" label="Yarn">
 
 ```bash
-# Using Yarn
 yarn add @bagpipes/wallet @polkadot/util-crypto
 ```
 </TabItem>
@@ -136,7 +127,8 @@ bagpipes-wallet-template/
 ```
 
 ## Adding @bagpipes/wallet
-1. Setting Up the Wallet Context Provider
+
+### Setting Up the Wallet Context Provider
 Wrap your application with the WalletContextProvider to supply wallet context values.
 
 ```jsx
@@ -167,8 +159,10 @@ function App() {
 
 export default App;
 ```
-Creating the Wallet Integration
-1. Create the ConnectWalletButton Component
+## Creating the Wallet Integration
+
+### 1. Create the ConnectWalletButton Component
+
 ```jsx
 
 // src/components/ConnectWalletButton.jsx
@@ -186,8 +180,11 @@ function ConnectWalletButton() {
 }
 
 export default ConnectWalletButton;
-2. Create the AccountInfo Component
-jsx
+```
+
+### 2. Create the AccountInfo Component
+
+```jsx
 
 // src/components/AccountInfo.jsx
 import React, { useContext } from 'react';
@@ -211,7 +208,7 @@ function AccountInfo() {
 export default AccountInfo;
 ```
 
-3. Create the WalletWidgetWrapper Component
+### 3. Create the WalletWidgetWrapper Component
 
 ```jsx
 
@@ -232,7 +229,8 @@ export default WalletWidgetWrapper;
 
 ```
 
-4. Update main.jsx
+## 4. Update main.jsx
+
 Ensure that your entry point main.jsx renders the App component.
 
 ```jsx
@@ -253,14 +251,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 ## Running the Project
 
 ### 1. Start the Development Server
+
+<Tabs groupId="npmOrYarn">
+<TabItem value="npm" label="npm" default>
+
 ```bash
-
-# Using npm
 npm run dev
+```
+</TabItem>
+  <TabItem value="yarn" label="Yarn" default>
 
-# Using Yarn
+
+```bash
 yarn dev
 ```
+</TabItem></Tabs>
 This will start the Vite development server, and you can view your app at http://localhost:5173 (default port).
 
 ### 2. Test the Wallet Integration

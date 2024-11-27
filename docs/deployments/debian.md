@@ -1,7 +1,5 @@
 # Deploy on Debian linux
 
-
-
 ## Requirements:  
  -  Node.js and npm   
  -  git   

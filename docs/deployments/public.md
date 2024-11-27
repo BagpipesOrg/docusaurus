@@ -1,7 +1,5 @@
 # Public instances
 
-
-
 ### List of XCMSend public instances: 
 -  [xcmsend.com](https://xcmsend.com)    
 -  [app.xcmsend.com](https://app.xcmsend.com)   
