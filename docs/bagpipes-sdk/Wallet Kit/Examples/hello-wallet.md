@@ -10,10 +10,12 @@ Create a DApp for the Polkadot ecosystem. This DApp template provides a connecti
 
 You can follow along below, or if you want to get started in seconds then you can just run the [replit](https://replit.com/@decentration/Bagpipes-Wallet-Template) or fork our [Frontend DApp Template on GitHub](https://github.com/XcmSend/Bagpipes-Wallet-Template)!
 
+:::tip[Run on Replit] 
+
 - [Replit](https://replit.com/@decentration/Bagpipes-Wallet-Template): Run project in seconds.
 
 <div class="text--center">
-**Code in a Replit** and get set up in seconds.
+**Code in a Replit Sandbox**
 
 <iframe
   src="https://replit.com/@decentration/Bagpipes-Wallet-Template?lite=true"
@@ -24,9 +26,11 @@ You can follow along below, or if you want to get started in seconds then you ca
 ></iframe>
 </div>
 
+:::
+
 
 - [Fork Github](https://github.com/XcmSend/Bagpipes-Wallet-Template): Get started in minutes. 
-- Follow along below: Setup project manually in ~12 minutes. 
+- Follow along below: _Setup project manually in ~12 minutes._ 
 
 
 
@@ -122,14 +126,14 @@ yarn
 <TabItem value="npm" label="npm">
 
 ```bash
-npm install @bagpipes/wallet antd @polkadot/util-crypto react-router-dom
+npm install @bagpipes/wallet antd @polkadot/util-crypto react-router-dom @ant-design/icons
 ```
 
 </TabItem>
 <TabItem value="yarn" label="Yarn">
 
 ```bash
-yarn add @bagpipes/wallet antd @polkadot/util-crypto react-router-dom
+yarn add @bagpipes/wallet antd @polkadot/util-crypto react-router-dom @ant-design/icons
 ```
 
 </TabItem>
