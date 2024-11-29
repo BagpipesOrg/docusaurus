@@ -9,3 +9,5 @@ import TabItem from '@theme/TabItem';
 # Add Chains to DApp
 ## @bagpipes/chains "Hello World"
 
+Coming soon TODO
+

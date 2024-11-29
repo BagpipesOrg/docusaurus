@@ -8,3 +8,5 @@ Bagpipes Wallet Kit makes it seamlessly simple for you to add Polkadot and EVM w
 
 Soon we will add Nova QR and Wallet Connect, which will essentially support almost all crypto wallets in the ecosystem. 
 
+You can get up and running in minutes by using our [ DApp Template example](/docs/bagpipes-sdk/Wallet%20Kit/Examples/hello-wallet.md).
+
