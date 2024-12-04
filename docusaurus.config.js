@@ -64,6 +64,36 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+   algolia: {
+      // The application ID provided by Algolia
+      appId: 'A3DGNU6I8C',
+
+      // Public API key: it is safe to commit it
+      apiKey: '645632a2a57995df6b6a60cc193db059',
+
+      indexName: 'bagpipesdocs',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      externalUrlRegex: 'external\\.com|domain\\.com',
+
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      searchPagePath: 'search',
+
+      insights: false,
+
+      //... other Algolia params
+    },	
+},
+{
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
