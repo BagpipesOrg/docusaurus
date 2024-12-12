@@ -1,9 +1,4 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -13,23 +8,15 @@ const config = {
   tagline: 'A powerful drag and drop platform for Web3',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://xcmsend.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://docs.bagpipes.io',
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'xcmsend', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'xcmsend',
+  projectName: 'docusaurus',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -42,15 +29,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/xcmsend/docusaurus/edit/master/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/xcmsend/docusaurus/',
         },
@@ -61,40 +44,33 @@ const config = {
     ],
   ],
 
+  // Add Algolia theme plugin
+  themes: [
+    [
+      '@docusaurus/theme-search-algolia',
+      {
+        id: 'search',
+      }
+    ]
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-   algolia: {
-      // The application ID provided by Algolia
-      appId: 'A3DGNU6I8C',
-
-      // Public API key: it is safe to commit it
-      apiKey: '645632a2a57995df6b6a60cc193db059',
-
-      indexName: 'bagpipesdocs',
-
-      // Optional: see doc section below
-      contextualSearch: true,
-
-      externalUrlRegex: 'external\\.com|domain\\.com',
-
-      replaceSearchResultPathname: {
-        from: '/docs/', // or as RegExp: /\/docs\//
-        to: '/',
+      // Algolia search configuration
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'A3DGNU6I8C',
+        // Public API key: it is safe to commit it
+        apiKey: '645632a2a57995df6b6a60cc193db059',
+        indexName: 'bagpipes',
+        // Optional: see doc section below
+        contextualSearch: false,
+        searchPagePath: 'search',
+        placeholder: 'testing',
+        //... other Algolia params
       },
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      searchPagePath: 'search',
-
-      insights: false,
-
-      //... other Algolia params
-    },	
-},
-{
-      // Replace with your project's social card
+      
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Bagpipes',
@@ -140,10 +116,6 @@ const config = {
           {
             title: 'Community',
             items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
               {
                 label: 'Discord',
                 href: 'https://discord.gg/37xpKPjdug',
@@ -170,6 +142,7 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Bagpipes Org.`,
       },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
