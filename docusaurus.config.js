@@ -122,7 +122,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          {label: "Try Bagpipes", position: 'right', href: "https://app.xcmsend.com"},
+          {label: "Start Building", position: 'right', href: "https://app.xcmsend.com"},
         ],
       },
       footer: {
