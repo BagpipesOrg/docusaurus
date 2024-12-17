@@ -1,0 +1,8 @@
+{
+  "label": "Threadbag",
+  "position": 14,
+  "link": {
+    "type": "generated-index",
+    "description": "Continously run Bagpipes scenarios"
+  }
+}
