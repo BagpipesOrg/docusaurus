@@ -65,16 +65,6 @@ Multi-threaded Persistence work server for Bagpipes.
 Made with: A Tokio runtime, Polodb + Sled, Subxt and actix-web. 
 
 
-## Basics:
-
-Once we have created the scenario, we can run it continously with threadbag: 
-- Step 1: Start Job   
-- Step 2: Query for Logs
-- Step 3: Query for transactions
-
-
-
-
 Lets get started by creating a scenario in the main interface at alpha.bagpipes.io, copy the link and copy the scenario id. Then lets start the job: 
 ![](/img/basic.png) 
 
@@ -106,21 +96,6 @@ print("Logs returned: ", logs.text)
 {"success":true,"result":["Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Got webhook data from the api: ","Latest data got back from uuid: {\"asset_id\": Number(7), \"address\": String(\"0x2e4ebdfb837f8b9ab416929986184b835a0c39901b4c5ab543e7d283f661fd67\")}","Building webhook request","uuid for webhook is: e5085097-1cc5-45fc-a5ea-c1db571c12a3","Webhook finished, moving on ","ChainQuery Node detected","ChainQuery Node Request built","ChainQuery got response back","workload executed","Sleeping","Starting worker","Decoding payload..","downloaded scenario data from api","Parsed scenario data","Got webhook data from the api: ","Latest data got back from uuid: {\"asset_id\": Number(7), \"address\": String(\"0x2e4ebdfb837f8b9ab416929986184b835a0c39901b4c5ab543e7d283f661fd67\")}","Building webhook request","uuid for webhook is: e5085097-1cc5-45fc-a5ea-c1db571c12a3","Webhook finished, moving on ","ChainQuery Node detected","ChainQuery Node Request built","ChainQuery got response back","workload executed","Sleeping"]}
 ```
 
-
-### Transaction Que  
-All transactions that gets drafted/generated for your scenarios, can be found here(`/scenario/tx`).  
-```python
-## Query for the transaction que 
-txmempool = requests.post(base+"/scenario/tx", json={"id": scenario_id})
-```
-
-```json
-{"mempool":[{"chain":"polkadot","amount":"0","txType":"ChainQuery","Date":"2024-06-01T22:35:39.319179786Z","tx":"{\"nonce\":\"8\",\"consumers\":\"0\",\"providers\":\"1\",\"sufficients\":\"0\",\"data\":{\"free\":\"13,096,674,612\",\"reserved\":\"0\",\"frozen\":\"0\",\"flags\":\"170,141,183,460,469,231,731,687,303,715,884,105,728\"}}"}]}
-```
-
-
-An example for running a scenario with threadbag and your own local signer can be found here:
-https://github.com/XcmSend/threadbag-examples
 
 
 ## Endpoints:  
