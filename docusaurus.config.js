@@ -30,12 +30,12 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/xcmsend/docusaurus/edit/master/',
+            'https://github.com/BagpipesOrg/docusaurus/edit/master/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/xcmsend/docusaurus/',
+            'https://github.com/BagpipesOrg/docusaurus/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -94,7 +94,7 @@ const config = {
 	 
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/xcmsend',
+            href: 'https://github.com/BagpipesOrg',
             label: 'GitHub',
             position: 'right',
           },
@@ -135,7 +135,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/xcmsend',
+                href: 'https://github.com/BagpipesOrg',
               },
             ],
           },
