@@ -132,7 +132,7 @@ curl https://th-0.bagpipes.io/version
 ```
 
 
-## **/getUrl/{name}"**
+## **/getUrl/<urlinfo>**
 
 ### Info:  
 
